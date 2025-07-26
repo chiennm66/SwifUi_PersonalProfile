@@ -20,7 +20,7 @@ struct ProfileHeaderView: View {
                 .clipShape(Circle())
                 .overlay(
                     Circle()
-                        .stroke(.green, lineWidth: 4)
+                        .stroke(.blue, lineWidth: 1)
                 )
                 .shadow(radius: 5)
             

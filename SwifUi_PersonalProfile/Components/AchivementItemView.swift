@@ -38,9 +38,3 @@ struct AchievementItemView: View {
     }
 }
 
-#Preview {
-    
-    var sampleAchievement = Achievement(icon: "star.fill", title: "First Achievement", description: "Complete your first task")
-    
-    AchievementItemView(achievement: sampleAchievement)
-}

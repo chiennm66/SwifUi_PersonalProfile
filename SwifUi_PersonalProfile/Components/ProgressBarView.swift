@@ -38,5 +38,5 @@ struct ProgressBarView: View {
 }
 
 #Preview {
-    ProgressBarView(value: .constant(0.8))
+    ProgressBarView(value: .constant(0.5))
 }

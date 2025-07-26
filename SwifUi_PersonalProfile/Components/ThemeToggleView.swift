@@ -7,22 +7,45 @@
 
 import SwiftUI
 
-struct DarkModeToggle: View {
-    @Binding var user : User
+struct ThemeToggleView: View {
+    @Binding var isDarkMode: Bool
+    var backgroundColor: Color = Color(.secondarySystemBackground)
+    
     var body: some View {
-        Toggle(isOn: $user.isDarkMode) {
-            HStack {
-                Image(systemName: user.isDarkMode ? "moon.fill" : "sun.max.fill")
-                Text(user.isDarkMode ? "Chế độ tối" : "Chế độ sáng")
+        VStack {
+            Toggle(isOn: $isDarkMode) {
+                HStack(spacing: 12) {
+                    Image(systemName: isDarkMode ? "moon.fill" : "sun.max.fill")
+                        .font(.system(size: 20))
+                        .foregroundColor(isDarkMode ? .yellow : .orange)
+                    
+                    Text(isDarkMode ? "Chế độ tối" : "Chế độ sáng")
+                        .font(.headline)
+                }
             }
+            .padding()
+            .background(backgroundColor)
+            .cornerRadius(15)
+            .shadow(color: Color.black.opacity(0.05), radius: 5, x: 0, y: 2)
         }
-        .padding()
-        .background(Color(.secondarySystemBackground))
-        .cornerRadius(15)
-        .padding(.horizontal)
+        .animation(.spring(), value: isDarkMode)
     }
 }
 
+// MARK: - Preview
 #Preview {
-    DarkModeToggle(user: .user)
+    Group {
+        // Light mode preview
+        ThemeToggleView(isDarkMode: .constant(false))
+            .previewLayout(.sizeThatFits)
+            .padding()
+            .previewDisplayName("Light Mode")
+        
+        // Dark mode preview
+        ThemeToggleView(isDarkMode: .constant(true))
+            .previewLayout(.sizeThatFits)
+            .padding()
+            .preferredColorScheme(.dark)
+            .previewDisplayName("Dark Mode")
+    }
 }

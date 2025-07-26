@@ -11,6 +11,12 @@
 		74B7F0B72D97A16000758F39 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B7F0B62D97A16000758F39 /* ContentView.swift */; };
 		74B7F0B92D97A16200758F39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74B7F0B82D97A16200758F39 /* Assets.xcassets */; };
 		74B7F0BC2D97A16200758F39 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74B7F0BB2D97A16200758F39 /* Preview Assets.xcassets */; };
+		74B7F0C52D97A1B700758F39 /* DataModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B7F0C42D97A1B700758F39 /* DataModels.swift */; };
+		74B7F0C72D97A1F800758F39 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B7F0C62D97A1F800758F39 /* ProfileHeaderView.swift */; };
+		74B7F0C92D97B48D00758F39 /* ProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B7F0C82D97B48D00758F39 /* ProgressBarView.swift */; };
+		74B7F0CB2D97B57300758F39 /* AchivementItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B7F0CA2D97B57300758F39 /* AchivementItemView.swift */; };
+		74B7F0CE2D97D77000758F39 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B7F0CD2D97D77000758F39 /* ProfileView.swift */; };
+		74B7F0D22D97DA2700758F39 /* ThemeToggleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B7F0D12D97DA2700758F39 /* ThemeToggleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,12 @@
 		74B7F0B62D97A16000758F39 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		74B7F0B82D97A16200758F39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74B7F0BB2D97A16200758F39 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		74B7F0C42D97A1B700758F39 /* DataModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModels.swift; sourceTree = "<group>"; };
+		74B7F0C62D97A1F800758F39 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
+		74B7F0C82D97B48D00758F39 /* ProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarView.swift; sourceTree = "<group>"; };
+		74B7F0CA2D97B57300758F39 /* AchivementItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchivementItemView.swift; sourceTree = "<group>"; };
+		74B7F0CD2D97D77000758F39 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		74B7F0D12D97DA2700758F39 /* ThemeToggleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeToggleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +63,9 @@
 		74B7F0B32D97A16000758F39 /* SwifUi_PersonalProfile */ = {
 			isa = PBXGroup;
 			children = (
+				74B7F0CC2D97D74900758F39 /* Views */,
+				74B7F0C32D97A17F00758F39 /* Components */,
+				74B7F0C22D97A17200758F39 /* Models */,
 				74B7F0B42D97A16000758F39 /* SwifUi_PersonalProfileApp.swift */,
 				74B7F0B62D97A16000758F39 /* ContentView.swift */,
 				74B7F0B82D97A16200758F39 /* Assets.xcassets */,
@@ -65,6 +80,33 @@
 				74B7F0BB2D97A16200758F39 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		74B7F0C22D97A17200758F39 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				74B7F0C42D97A1B700758F39 /* DataModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		74B7F0C32D97A17F00758F39 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				74B7F0C62D97A1F800758F39 /* ProfileHeaderView.swift */,
+				74B7F0C82D97B48D00758F39 /* ProgressBarView.swift */,
+				74B7F0CA2D97B57300758F39 /* AchivementItemView.swift */,
+				74B7F0D12D97DA2700758F39 /* ThemeToggleView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		74B7F0CC2D97D74900758F39 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				74B7F0CD2D97D77000758F39 /* ProfileView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +179,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74B7F0D22D97DA2700758F39 /* ThemeToggleView.swift in Sources */,
 				74B7F0B72D97A16000758F39 /* ContentView.swift in Sources */,
+				74B7F0C52D97A1B700758F39 /* DataModels.swift in Sources */,
 				74B7F0B52D97A16000758F39 /* SwifUi_PersonalProfileApp.swift in Sources */,
+				74B7F0C72D97A1F800758F39 /* ProfileHeaderView.swift in Sources */,
+				74B7F0C92D97B48D00758F39 /* ProgressBarView.swift in Sources */,
+				74B7F0CE2D97D77000758F39 /* ProfileView.swift in Sources */,
+				74B7F0CB2D97B57300758F39 /* AchivementItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
